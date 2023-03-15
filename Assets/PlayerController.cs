@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
 
     Vector2 moveDirection = Vector2.zero;
 
+    Vector3 footOffset = new Vector3(0, -2, 0);
+
     private void OnEnable(){
         playerControls.Enable();
     }
@@ -22,6 +24,9 @@ public class PlayerController : MonoBehaviour
     }
 
     void Update(){
+
+        CheckTerrain();
+
         moveDirection = playerControls.ReadValue<Vector2>();
 
         animator.SetFloat("Horizontal", moveDirection.x);
@@ -37,5 +42,22 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate(){
         rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
+    }
+
+    public void OnStep()
+    {
+        SoundManager.Instance.PlayFootstepSound();
+    }
+
+    private void CheckTerrain()
+    {
+        RaycastHit2D[] _hits = Physics2D.RaycastAll(transform.position + footOffset, Vector3.forward, 1.0f);
+        Debug.Log(transform.position + footOffset);
+        if (_hits.Length > 1)
+        {
+            SoundManager.Instance.terrain = _hits[1].transform.gameObject.layer;
+        }
+        //Debug.Log(terrain);
+        Debug.Log(_hits.Length);
     }
 }
