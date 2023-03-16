@@ -25,23 +25,37 @@ public class PlayerController : MonoBehaviour
 
     void Update(){
 
-        CheckTerrain();
+        if (!GameManager.Instance.freezeInput)
+        {
+            CheckTerrain();
 
-        moveDirection = playerControls.ReadValue<Vector2>();
+            moveDirection = playerControls.ReadValue<Vector2>();
 
-        animator.SetFloat("Horizontal", moveDirection.x);
-        animator.SetFloat("Vertical", moveDirection.y);
+            animator.SetFloat("Horizontal", moveDirection.x);
+            animator.SetFloat("Vertical", moveDirection.y);
 
-        animator.SetFloat("Speed", moveDirection.sqrMagnitude);
+            animator.SetFloat("Speed", moveDirection.sqrMagnitude);
 
-        if(animator.GetFloat("Speed") != 0){
-            animator.SetFloat("LastHorizontal", animator.GetFloat("Horizontal"));
-            animator.SetFloat("LastVertical", animator.GetFloat("Vertical"));
+            if (animator.GetFloat("Speed") != 0)
+            {
+                animator.SetFloat("LastHorizontal", animator.GetFloat("Horizontal"));
+                animator.SetFloat("LastVertical", animator.GetFloat("Vertical"));
+            }
+        } else
+        {
+            animator.SetFloat("Speed", 0);
         }
+        
     }
 
     private void FixedUpdate(){
-        rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
+        if (!GameManager.Instance.freezeInput)
+        {
+            rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
+        } else
+        {
+            rb.velocity = new Vector2(0, 0);
+        }
     }
 
     public void OnStep()
