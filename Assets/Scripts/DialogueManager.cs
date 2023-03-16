@@ -112,7 +112,7 @@ public class DialogueManager : Singleton<DialogueManager>
     private void UpdateDialogueItemIndexMax()
     {
         
-        audioManager.GetComponent<AudioSource>().PlayOneShot(clickSound, 0.5f);
+       //audioManager.GetComponent<AudioSource>().PlayOneShot(clickSound, 0.5f);
         _dialogueItenIndexMax = _dialogue.DialogueItemList.Count - 1;
         
     }

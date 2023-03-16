@@ -14,22 +14,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _title: TestDialogue
   _description: 
-  _startImageLeft: {fileID: 0}
-  _startImageRight: {fileID: 0}
+  _startImageLeft: {fileID: 21300000, guid: 098b834aba929b546b52a00ce4804e4e, type: 3}
+  _startImageRight: {fileID: 21300000, guid: 817683e5dda4f934ba34dd84e589657a, type: 3}
   dialogueMusic: {fileID: 0}
   narratorSound: {fileID: 0}
   _dialogueItemList:
   - _position: 0
-    _image: {fileID: 0}
+    _image: {fileID: 21300000, guid: 098b834aba929b546b52a00ce4804e4e, type: 3}
     _text: test
-  - _position: 0
-    _image: {fileID: 0}
+  - _position: 1
+    _image: {fileID: 21300000, guid: 817683e5dda4f934ba34dd84e589657a, type: 3}
     _text: more test
   - _position: 0
-    _image: {fileID: 0}
+    _image: {fileID: 21300000, guid: 098b834aba929b546b52a00ce4804e4e, type: 3}
     _text: even more test
-  - _position: 0
-    _image: {fileID: 0}
+  - _position: 1
+    _image: {fileID: 21300000, guid: 817683e5dda4f934ba34dd84e589657a, type: 3}
     _text: test uwu
   isLoop: 1
   nextDialogue: {fileID: 0}
