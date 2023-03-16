@@ -6,9 +6,10 @@ public class SoundManager : Singleton<SoundManager>
 
 {
 
-    public FMOD.Studio.EventInstance _houseBgm;
-    public FMOD.Studio.EventInstance _outsideBgm;
-    public FMOD.Studio.EventInstance _brainBgm;
+    public FMOD.Studio.EventInstance houseBgm;
+    public FMOD.Studio.EventInstance outsideBgm;
+    public FMOD.Studio.EventInstance brainBgm;
+    public FMOD.Studio.EventInstance startBgm;
 
     private static FMOD.Studio.EventInstance footstepEvent;
 
@@ -16,12 +17,14 @@ public class SoundManager : Singleton<SoundManager>
 
     void Start()
     {
-        _houseBgm = FMODUnity.RuntimeManager.CreateInstance("event:/Music/HouseBGM");
-        _houseBgm.start();
+        houseBgm = FMODUnity.RuntimeManager.CreateInstance("event:/Music/HouseBGM");
+        //_houseBgm.start();
 
-        _outsideBgm = FMODUnity.RuntimeManager.CreateInstance("event:/Music/OutsideBGM");
+        outsideBgm = FMODUnity.RuntimeManager.CreateInstance("event:/Music/OutsideBGM");
 
-        _brainBgm = FMODUnity.RuntimeManager.CreateInstance("event:/Music/BrainBGM");
+        brainBgm = FMODUnity.RuntimeManager.CreateInstance("event:/Music/BrainBGM");
+
+        startBgm = FMODUnity.RuntimeManager.CreateInstance("event:/Music/StartMenuBGM");
     }
 
     
@@ -56,6 +59,7 @@ public class SoundManager : Singleton<SoundManager>
         footstepEvent.start();
         footstepEvent.release();
     }
+
 
 
 
