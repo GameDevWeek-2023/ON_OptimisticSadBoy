@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{16bbeb17-1a60-47de-a8a6-85b3663d96e7}">
+		<property name="assetPath">
+			<value>IBWind.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>248.06452083333335</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{35d527ef-801a-40b2-8369-0a259758f4d6}</destination>
+		</relationship>
+	</object>
+</objects>

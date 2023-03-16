@@ -20,7 +20,7 @@ public class DoorManager : MonoBehaviour
         GetComponent<SpriteRenderer>().sprite = openSprite;
         transform.localPosition = new Vector2(openX, transform.localPosition.y);
         GetComponent<Renderer>().sortingOrder = 2;
-        source.PlayOneShot(openSound);
+        source.PlayOneShot(openSound, 0.7f);
     }
 
     // Update is called once per frame
@@ -29,6 +29,6 @@ public class DoorManager : MonoBehaviour
         GetComponent<SpriteRenderer>().sprite = closedSprite;
         transform.localPosition = new Vector2(closedX, transform.localPosition.y);
         GetComponent<Renderer>().sortingOrder = 4;
-        source.PlayOneShot(closeSound);
+        source.PlayOneShot(closeSound, 0.7f);
     }
 }
