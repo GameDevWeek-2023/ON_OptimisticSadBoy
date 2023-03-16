@@ -13,7 +13,7 @@ public class ForegroundCheck : MonoBehaviour
     {
         if (player.transform.position.y > playerYThreshold)
         {
-            renderer.sortingOrder = 3;
+            renderer.sortingOrder = 4;
         } else
         {
             renderer.sortingOrder = 1;
