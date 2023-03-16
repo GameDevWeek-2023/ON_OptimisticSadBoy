@@ -52,12 +52,12 @@ public class PlayerController : MonoBehaviour
     private void CheckTerrain()
     {
         RaycastHit2D[] _hits = Physics2D.RaycastAll(transform.position + footOffset, Vector3.forward, 1.0f);
-        Debug.Log(transform.position + footOffset);
+        //Debug.Log(transform.position + footOffset);
         if (_hits.Length > 1)
         {
             SoundManager.Instance.terrain = _hits[1].transform.gameObject.layer;
         }
         //Debug.Log(terrain);
-        Debug.Log(_hits.Length);
+        //Debug.Log(_hits.Length);
     }
 }

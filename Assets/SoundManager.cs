@@ -8,6 +8,7 @@ public class SoundManager : Singleton<SoundManager>
 
     public FMOD.Studio.EventInstance _houseBgm;
     public FMOD.Studio.EventInstance _outsideBgm;
+    public FMOD.Studio.EventInstance _brainBgm;
 
     private static FMOD.Studio.EventInstance footstepEvent;
 
@@ -19,9 +20,11 @@ public class SoundManager : Singleton<SoundManager>
         _houseBgm.start();
 
         _outsideBgm = FMODUnity.RuntimeManager.CreateInstance("event:/Music/OutsideBGM");
+
+        _brainBgm = FMODUnity.RuntimeManager.CreateInstance("event:/Music/BrainBGM");
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
 
@@ -45,7 +48,7 @@ public class SoundManager : Singleton<SoundManager>
                 footstepEvent.setParameterByName("Surface", 2);
                 break;
 
-            case 10:
+            case 9:
                 footstepEvent.setParameterByName("Surface", 3);
                 break;
         }

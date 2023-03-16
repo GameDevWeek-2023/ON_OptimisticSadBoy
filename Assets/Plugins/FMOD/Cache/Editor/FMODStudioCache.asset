@@ -67,10 +67,10 @@ MonoBehaviour:
   Path: Assets/FMOD/OSB/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638145212056753203
+  lastModified: 638145243556491181
   FileSizes:
   - Name: Desktop
-    Value: 1014
+    Value: 1054
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -93,12 +93,13 @@ MonoBehaviour:
   - {fileID: 859498235320246259}
   - {fileID: 3142481545373512775}
   - {fileID: -3266947519891858463}
+  - {fileID: 5875885613758813632}
   EditorParameters: []
   MasterBanks:
   - {fileID: 4105897510238075887}
   StringsBanks:
   - {fileID: -1869127650966296864}
-  cacheTime: 638145212056913232
+  cacheTime: 638145243592676025
   cacheVersion: 131592
 --- !u!114 &859498235320246259
 MonoBehaviour:
@@ -169,11 +170,38 @@ MonoBehaviour:
   Path: Assets/FMOD/OSB/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638145212056743199
+  lastModified: 638145243556461179
   FileSizes:
   - Name: Desktop
     Value: 1036
   Exists: 1
+--- !u!114 &5875885613758813632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/BrainBGM
+  m_EditorClassIdentifier: 
+  Path: event:/Music/BrainBGM
+  Guid:
+    Data1: 1456917990
+    Data2: 1157350212
+    Data3: 1930887855
+    Data4: -1184140514
+  Banks:
+  - {fileID: 6613017254889107643}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 165982
 --- !u!114 &6613017254889107643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,10 +217,10 @@ MonoBehaviour:
   Path: Assets/FMOD/OSB/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638145212056903240
+  lastModified: 638145243591926050
   FileSizes:
   - Name: Desktop
-    Value: 1785920
+    Value: 3348064
   Exists: 1
 --- !u!114 &8510972066428267178
 MonoBehaviour:
@@ -209,7 +237,7 @@ MonoBehaviour:
   Path: Assets/FMOD/OSB/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638145212056913232
+  lastModified: 638145243592676025
   FileSizes:
   - Name: Desktop
     Value: 38656
