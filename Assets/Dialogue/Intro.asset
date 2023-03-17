@@ -54,6 +54,6 @@ MonoBehaviour:
   - _position: 1
     _image: {fileID: 21300000, guid: 9558ab29d1df199459b8b51e3e5d9117, type: 3}
     _text: The world is a harsh place, and you need to be prepared for that.
-  isLoop: 1
+  isLoop: 0
   nextDialogue: {fileID: 0}
   isNarratorText: 0

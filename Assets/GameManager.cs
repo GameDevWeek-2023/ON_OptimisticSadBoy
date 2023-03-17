@@ -11,7 +11,7 @@ public class GameManager : Singleton<GameManager>
 
     void Start()
     {
-        
+        //DontDestroyOnLoad(this.gameObject);
     }
 
     public void FreezeInput()

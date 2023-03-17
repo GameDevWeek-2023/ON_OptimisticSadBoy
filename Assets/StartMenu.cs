@@ -30,7 +30,10 @@ public class StartMenu : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
 
-        SceneManager.LoadScene("House");
+        SceneManager.LoadScene("Intro");
         SoundManager.Instance.startBgm.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        //GameObject.Find("Fader").GetComponent<Fade>().In(2f);
+
+        //yield return new WaitForSeconds(1.5f);
     }
 }

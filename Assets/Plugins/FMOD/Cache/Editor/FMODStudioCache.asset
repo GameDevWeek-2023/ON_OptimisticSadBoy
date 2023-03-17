@@ -94,10 +94,10 @@ MonoBehaviour:
   Path: Assets/FMOD/OSB/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638146538520229970
+  lastModified: 638146689992633270
   FileSizes:
   - Name: Desktop
-    Value: 1144
+    Value: 1182
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -123,12 +123,13 @@ MonoBehaviour:
   - {fileID: 5875885613758813632}
   - {fileID: 3227293911071436105}
   - {fileID: -8895724016524881562}
+  - {fileID: 8889570504791618560}
   EditorParameters: []
   MasterBanks:
   - {fileID: 4105897510238075887}
   StringsBanks:
   - {fileID: -1869127650966296864}
-  cacheTime: 638146538520810090
+  cacheTime: 638146689993468545
   cacheVersion: 131592
 --- !u!114 &859498235320246259
 MonoBehaviour:
@@ -227,7 +228,7 @@ MonoBehaviour:
   Path: Assets/FMOD/OSB/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638146161822987167
+  lastModified: 638146689992603270
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -274,10 +275,10 @@ MonoBehaviour:
   Path: Assets/FMOD/OSB/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638146538520710075
+  lastModified: 638146689993208481
   FileSizes:
   - Name: Desktop
-    Value: 7556832
+    Value: 7795296
   Exists: 1
 --- !u!114 &8510972066428267178
 MonoBehaviour:
@@ -294,8 +295,35 @@ MonoBehaviour:
   Path: Assets/FMOD/OSB/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638146538520810090
+  lastModified: 638146689993468545
   FileSizes:
   - Name: Desktop
     Value: 1208096
   Exists: 1
+--- !u!114 &8889570504791618560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/DeepBGM
+  m_EditorClassIdentifier: 
+  Path: event:/Music/DeepBGM
+  Guid:
+    Data1: 258000320
+    Data2: 1121969611
+    Data3: 400984704
+    Data4: 938452674
+  Banks:
+  - {fileID: 6613017254889107643}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 22569

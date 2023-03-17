@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2bd55f13fe3a874d8ecc5193802b9f7, type: 3}
+  m_Name: WakeUp
+  m_EditorClassIdentifier: 
+  _title: 
+  _description: 
+  _startImageLeft: {fileID: 21300000, guid: f49e157f64f9dc149ae7df5c76c2d5a3, type: 3}
+  _startImageRight: {fileID: 21300000, guid: 9558ab29d1df199459b8b51e3e5d9117, type: 3}
+  dialogueMusic: {fileID: 0}
+  narratorSound: {fileID: 0}
+  _dialogueItemList:
+  - _position: 0
+    _image: {fileID: 0}
+    _text: 
+  - _position: 1
+    _image: {fileID: 21300000, guid: 9558ab29d1df199459b8b51e3e5d9117, type: 3}
+    _text: WAKE UP, Daemon!
+  - _position: 0
+    _image: {fileID: 21300000, guid: 34d9cbaa3f18ceb4386a4fe36046c0bb, type: 3}
+    _text: "(Yeah\u2026 Another gray morning in this monotonous world.)"
+  - _position: 0
+    _image: {fileID: 21300000, guid: 34d9cbaa3f18ceb4386a4fe36046c0bb, type: 3}
+    _text: (A day like any other...)
+  - _position: 0
+    _image: {fileID: 21300000, guid: 34d9cbaa3f18ceb4386a4fe36046c0bb, type: 3}
+    _text: (Will that change someday? Hope dies last, does it?)
+  - _position: 1
+    _image: {fileID: 21300000, guid: 9558ab29d1df199459b8b51e3e5d9117, type: 3}
+    _text: Hurry up, Daemon! School isn't open all day!
+  - _position: 0
+    _image: {fileID: 21300000, guid: 34d9cbaa3f18ceb4386a4fe36046c0bb, type: 3}
+    _text: (School. Worse than the smell of cat food.)
+  - _position: 1
+    _image: {fileID: 21300000, guid: 9558ab29d1df199459b8b51e3e5d9117, type: 3}
+    _text: As I told you, I need to get to work earlier, today.
+  - _position: 1
+    _image: {fileID: 21300000, guid: 9558ab29d1df199459b8b51e3e5d9117, type: 3}
+    _text: Your breaktime snack is in the kitchen. So wake up and get going!
+  isLoop: 0
+  nextDialogue: {fileID: 0}
+  isNarratorText: 0

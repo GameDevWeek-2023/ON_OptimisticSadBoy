@@ -31,7 +31,7 @@ public class DialogueManager : Singleton<DialogueManager>
     private Vector4 _alphaCharacterActive = new Vector4(1, 1, 1, 1);
     private Vector4 _alphaCharacterPassive = new Vector4(1, 1, 1, .35f);
 
-    private List<DialogueSO> completedDialogues = new List<DialogueSO>();
+    public List<DialogueSO> completedDialogues = new List<DialogueSO>();
 
     public GameObject audioManager;
 
@@ -182,6 +182,7 @@ public class DialogueManager : Singleton<DialogueManager>
 
         if(IsDialogueFinished())
         {
+            Debug.Log("finish");
             CompleteDialogue(_dialogue);
             return;
         }

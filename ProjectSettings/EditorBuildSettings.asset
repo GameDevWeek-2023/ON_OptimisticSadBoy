@@ -17,4 +17,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/StartMenu.unity
     guid: f8d805c1a63060748b72a93d4fd6f234
+  - enabled: 1
+    path: Assets/Scenes/Intro.unity
+    guid: 295d69e1596a91e41ac822d59a7d8478
+  - enabled: 1
+    path: Assets/Scenes/School.unity
+    guid: e9a6f54a994d87c4ab8980092061056c
+  - enabled: 1
+    path: Assets/Scenes/WakeUp.unity
+    guid: da2fa23713cdd394881baa747c481057
   m_configObjects: {}

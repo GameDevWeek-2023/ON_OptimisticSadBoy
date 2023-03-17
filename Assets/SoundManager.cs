@@ -10,6 +10,7 @@ public class SoundManager : Singleton<SoundManager>
     public FMOD.Studio.EventInstance outsideBgm;
     public FMOD.Studio.EventInstance brainBgm;
     public FMOD.Studio.EventInstance startBgm;
+    public FMOD.Studio.EventInstance deepBgm;
 
     private static FMOD.Studio.EventInstance footstepEvent;
 
@@ -31,6 +32,8 @@ public class SoundManager : Singleton<SoundManager>
         brainBgm = FMODUnity.RuntimeManager.CreateInstance("event:/Music/BrainBGM");
 
         startBgm = FMODUnity.RuntimeManager.CreateInstance("event:/Music/StartMenuBGM");
+
+        deepBgm = FMODUnity.RuntimeManager.CreateInstance("event:/Music/DeepBGM");
     }
 
     
