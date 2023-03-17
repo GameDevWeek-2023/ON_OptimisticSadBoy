@@ -1,5 +1,32 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8895724016524881562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Door
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Door
+  Guid:
+    Data1: -1082258032
+    Data2: 1317890387
+    Data3: -1014187356
+    Data4: -680375376
+  Banks:
+  - {fileID: 8510972066428267178}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 984
 --- !u!114 &-5114147550439112843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67,10 +94,10 @@ MonoBehaviour:
   Path: Assets/FMOD/OSB/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638146082415487403
+  lastModified: 638146161823007161
   FileSizes:
   - Name: Desktop
-    Value: 1096
+    Value: 1144
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -95,12 +122,13 @@ MonoBehaviour:
   - {fileID: -3266947519891858463}
   - {fileID: 5875885613758813632}
   - {fileID: 3227293911071436105}
+  - {fileID: -8895724016524881562}
   EditorParameters: []
   MasterBanks:
   - {fileID: 4105897510238075887}
   StringsBanks:
   - {fileID: -1869127650966296864}
-  cacheTime: 638146082459097537
+  cacheTime: 638146161823825649
   cacheVersion: 131592
 --- !u!114 &859498235320246259
 MonoBehaviour:
@@ -128,7 +156,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 85968
+  Length: 86468
 --- !u!114 &3142481545373512775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -199,7 +227,7 @@ MonoBehaviour:
   Path: Assets/FMOD/OSB/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638146082415457390
+  lastModified: 638146161822987167
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -246,7 +274,7 @@ MonoBehaviour:
   Path: Assets/FMOD/OSB/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638146082458855194
+  lastModified: 638146161823574727
   FileSizes:
   - Name: Desktop
     Value: 7556832
@@ -266,8 +294,8 @@ MonoBehaviour:
   Path: Assets/FMOD/OSB/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638146082459097537
+  lastModified: 638146161823825649
   FileSizes:
   - Name: Desktop
-    Value: 1198048
+    Value: 1208096
   Exists: 1

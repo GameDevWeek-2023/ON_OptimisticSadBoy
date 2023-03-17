@@ -11,7 +11,7 @@ public class GameManager : Singleton<GameManager>
 
     void Start()
     {
-        SoundManager.Instance.houseBgm.start();
+        
     }
 
     public void FreezeInput()
@@ -26,16 +26,18 @@ public class GameManager : Singleton<GameManager>
 
     public void LoadHouseScene()
     {
-        SoundManager.Instance.outsideBgm.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        SoundManager.Instance.outsideBgm.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         SoundManager.Instance.houseBgm.start();
-        SceneManager.LoadScene("Outside");
+        SoundManager.Instance.PlayDoorSound();
+        SceneManager.LoadScene("House");
     }
 
     public void LoadOutsideScene()
     {        
-        SoundManager.Instance.houseBgm.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        SoundManager.Instance.houseBgm.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         SoundManager.Instance.outsideBgm.start();
-        SceneManager.LoadScene("Outside");
+        SoundManager.Instance.PlayDoorSound();
+        SceneManager.LoadScene("Hometown");
     }
     
 

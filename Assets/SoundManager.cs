@@ -13,14 +13,20 @@ public class SoundManager : Singleton<SoundManager>
 
     private static FMOD.Studio.EventInstance footstepEvent;
 
+    private FMOD.Studio.EventInstance doorEvent;
+
     public int terrain = 0;
 
     void Start()
     {
+
+        DontDestroyOnLoad(this.gameObject);
+
         houseBgm = FMODUnity.RuntimeManager.CreateInstance("event:/Music/HouseBGM");
         //_houseBgm.start();
 
         outsideBgm = FMODUnity.RuntimeManager.CreateInstance("event:/Music/OutsideBGM");
+        //outsideBgm.start();
 
         brainBgm = FMODUnity.RuntimeManager.CreateInstance("event:/Music/BrainBGM");
 
@@ -58,6 +64,12 @@ public class SoundManager : Singleton<SoundManager>
 
         footstepEvent.start();
         footstepEvent.release();
+    }
+
+    public void PlayDoorSound()
+    {
+        doorEvent = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Door");
+        doorEvent.start();
     }
 
 
