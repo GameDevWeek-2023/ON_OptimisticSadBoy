@@ -34,6 +34,7 @@ public class IntroScene : MonoBehaviour
         }
         if (DialogueManager.Instance.completedDialogues.Count == 1) 
         {
+            
             StartCoroutine(SceneTransition());
         }
     }
@@ -42,7 +43,8 @@ public class IntroScene : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         //GameObject.Find("UI").GetComponent<Image>().enabled = true;
-        SceneManager.LoadScene("WakeUp");
+        //SceneManager.LoadScene("WakeUp");
+        SceneManager.LoadScene("Black");
         SoundManager.Instance.deepBgm.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         //SoundManager.Instance.houseBgm.start();
     }

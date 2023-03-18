@@ -23,11 +23,11 @@ public class DialogueSO : ScriptableObject
     [Header("Dialogue")]
     [SerializeField]
     private List<DialogueItemStruct> _dialogueItemList = new List<DialogueItemStruct>();
-    /*
+    
     [Header("Finished")]
     [SerializeField]
     private List<ItemSO> _rewardItemList;
-    */
+    
     public bool isLoop = true;
     //public ItemSO requiredItem;
     //public bool removeRequiredItem = true;
@@ -44,6 +44,6 @@ public class DialogueSO : ScriptableObject
     public string Description { get => _description; set => _description = value; }
     public Sprite StartImageLeft { get => _startImageLeft; private set => _startImageLeft = value; }
     public Sprite StartImageRight { get => _startImageRight; private set => _startImageRight = value; }
-    //public List<ItemSO> RewardItemList { get => _rewardItemList; private set => _rewardItemList = value; }
+    public List<ItemSO> RewardItemList { get => _rewardItemList; private set => _rewardItemList = value; }
     public List<DialogueItemStruct> DialogueItemList { get => _dialogueItemList; private set => _dialogueItemList = value; }
 }

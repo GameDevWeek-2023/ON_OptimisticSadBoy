@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2bd55f13fe3a874d8ecc5193802b9f7, type: 3}
+  m_Name: Bettler2
+  m_EditorClassIdentifier: 
+  _title: 
+  _description: 
+  _startImageLeft: {fileID: 21300000, guid: 34d9cbaa3f18ceb4386a4fe36046c0bb, type: 3}
+  _startImageRight: {fileID: 21300000, guid: ec29023e5e7be0645a1e1b19eec0309a, type: 3}
+  dialogueMusic: {fileID: 0}
+  narratorSound: {fileID: 0}
+  _dialogueItemList:
+  - _position: 1
+    _image: {fileID: 21300000, guid: ec29023e5e7be0645a1e1b19eec0309a, type: 3}
+    _text: It's dangerous to go alone. Bitch.
+    rewardItems: []
+  _rewardItemList: []
+  isLoop: 1
+  nextDialogue: {fileID: 0}
+  isNarratorText: 0

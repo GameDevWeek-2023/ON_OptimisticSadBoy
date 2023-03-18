@@ -20,17 +20,22 @@ MonoBehaviour:
   narratorSound: {fileID: 0}
   _dialogueItemList:
   - _position: 0
-    _image: {fileID: 21300000, guid: 098b834aba929b546b52a00ce4804e4e, type: 3}
+    _image: {fileID: 21300000, guid: ddf2e76e8a1f88f46ae1e42277850b48, type: 3}
     _text: test
+    rewardItems: []
   - _position: 1
-    _image: {fileID: 21300000, guid: 817683e5dda4f934ba34dd84e589657a, type: 3}
+    _image: {fileID: 21300000, guid: ec29023e5e7be0645a1e1b19eec0309a, type: 3}
     _text: more test
+    rewardItems: []
   - _position: 0
-    _image: {fileID: 21300000, guid: 098b834aba929b546b52a00ce4804e4e, type: 3}
+    _image: {fileID: 21300000, guid: 309dd524aa4afc0409a765bb3341aead, type: 3}
     _text: even more test
+    rewardItems: []
   - _position: 1
-    _image: {fileID: 21300000, guid: 817683e5dda4f934ba34dd84e589657a, type: 3}
+    _image: {fileID: 21300000, guid: ec29023e5e7be0645a1e1b19eec0309a, type: 3}
     _text: test uwu
-  isLoop: 1
-  nextDialogue: {fileID: 0}
+    rewardItems: []
+  _rewardItemList: []
+  isLoop: 0
+  nextDialogue: {fileID: 11400000}
   isNarratorText: 0

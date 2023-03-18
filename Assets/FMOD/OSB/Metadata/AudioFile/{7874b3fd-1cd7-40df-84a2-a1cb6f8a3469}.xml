@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{7874b3fd-1cd7-40df-84a2-a1cb6f8a3469}">
+		<property name="assetPath">
+			<value>bus-94441.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>6.9224489795918371</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{35d527ef-801a-40b2-8369-0a259758f4d6}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -19,7 +19,7 @@ public struct DialogueItemStruct
     private string _text;
 
     //[HideInInspector]
-    //public List<ItemSO> rewardItems;
+    public List<ItemSO> rewardItems;
 
     public DialogueCharacter Character { get => _character; private set => _character = value; }
     //public DialogueEventSO Event { get => _event; private set => _event = value; }

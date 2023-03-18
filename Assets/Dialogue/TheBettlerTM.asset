@@ -22,49 +22,66 @@ MonoBehaviour:
   - _position: 0
     _image: {fileID: 0}
     _text: 
-  - _position: 0
+    rewardItems: []
+  - _position: 1
     _image: {fileID: 21300000, guid: ec29023e5e7be0645a1e1b19eec0309a, type: 3}
     _text: Hey, young man. You're one of Ms. Jennings' students, aren't you?
+    rewardItems: []
   - _position: 0
     _image: {fileID: 21300000, guid: f49e157f64f9dc149ae7df5c76c2d5a3, type: 3}
     _text: Yes?
+    rewardItems: []
   - _position: 1
     _image: {fileID: 21300000, guid: ec29023e5e7be0645a1e1b19eec0309a, type: 3}
     _text: I used to be a teacher, you know. Before I fell on hard times.
+    rewardItems: []
   - _position: 0
     _image: {fileID: 21300000, guid: f49e157f64f9dc149ae7df5c76c2d5a3, type: 3}
     _text: I'm sorry to hear that, Sir.
+    rewardItems: []
   - _position: 1
     _image: {fileID: 21300000, guid: ec29023e5e7be0645a1e1b19eec0309a, type: 3}
     _text: It's alright, young man.
+    rewardItems: []
   - _position: 1
     _image: {fileID: 21300000, guid: ec29023e5e7be0645a1e1b19eec0309a, type: 3}
     _text: "As long as I have enough to eat and sometimes a warm place, I\u2019m
       alright."
+    rewardItems: []
   - _position: 1
     _image: {fileID: 21300000, guid: ec29023e5e7be0645a1e1b19eec0309a, type: 3}
     _text: Although I haven't eaten anything for the past 2 days...
+    rewardItems: []
   - _position: 0
     _image: {fileID: 21300000, guid: f49e157f64f9dc149ae7df5c76c2d5a3, type: 3}
     _text: Here, Sir. I think you need this much more than I do.
+    rewardItems: []
   - _position: 1
     _image: {fileID: 21300000, guid: ec29023e5e7be0645a1e1b19eec0309a, type: 3}
     _text: Thank you, young man. Not everyone has such a kind heart as you do.
+    rewardItems: []
   - _position: 0
     _image: {fileID: 21300000, guid: f49e157f64f9dc149ae7df5c76c2d5a3, type: 3}
     _text: "You\u2019re welcome."
+    rewardItems: []
   - _position: 0
     _image: {fileID: 21300000, guid: f49e157f64f9dc149ae7df5c76c2d5a3, type: 3}
     _text: "But I\u2019m wondering: What is it that keeps you going on?"
+    rewardItems: []
   - _position: 1
     _image: {fileID: 21300000, guid: ec29023e5e7be0645a1e1b19eec0309a, type: 3}
     _text: I've learned to make the best of what I have.
+    rewardItems: []
   - _position: 1
     _image: {fileID: 21300000, guid: ec29023e5e7be0645a1e1b19eec0309a, type: 3}
     _text: You should too. You have your whole life ahead of you.
+    rewardItems: []
   - _position: 1
     _image: {fileID: 21300000, guid: ec29023e5e7be0645a1e1b19eec0309a, type: 3}
     _text: Make it count.
-  isLoop: 1
-  nextDialogue: {fileID: 0}
+    rewardItems: []
+  _rewardItemList:
+  - {fileID: 11400000, guid: 20083c5d52d0cb840bea6adef04cbf63, type: 2}
+  isLoop: 0
+  nextDialogue: {fileID: 11400000, guid: 775a719e7f843fa489090b034d3c0654, type: 2}
   isNarratorText: 0

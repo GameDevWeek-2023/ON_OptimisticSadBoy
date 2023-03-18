@@ -629,7 +629,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 11
   m_Sprite: {fileID: 21300000, guid: 18b5c31549dc88c409e80cddd258f6be, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1196,3 +1196,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   introDialogue: {fileID: 11400000, guid: 53c5269c8ec5e0c4184e875190b9f251, type: 2}
+  wakeDialogue: {fileID: 11400000, guid: 33bd721c093a54a4296e98ee4c1d1756, type: 2}

@@ -21,10 +21,10 @@ public class DialogueInteractable : Interactable
     {
         //base.Interact(item);
         Debug.Log("test");
-        if (!GameManager.Instance.freezeInput)
+        if (!GameManager.freezeInput)
         {
             DialogueManager.Instance.Dialogue = dialogue;
-            GameManager.Instance.FreezeInput();
+            GameManager.FreezeInput();
         } else
         {
             DialogueManager.Instance.Next();

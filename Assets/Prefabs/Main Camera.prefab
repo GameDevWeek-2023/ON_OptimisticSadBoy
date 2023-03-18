@@ -167,10 +167,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickSound: {fileID: 8300000, guid: 592fe4bf4ff41f6499b32e2fa8005025, type: 3}
+  grabSound: {fileID: 8300000, guid: 4ffaaa9ec2f301d49986c6cdf6570990, type: 3}
   _dialogue: {fileID: 0}
   _characterImageLeftUI: {fileID: 0}
   _characterImageRightUI: {fileID: 0}
   _dialogueTextUI: {fileID: 0}
   _dialogueUIWrapper: {fileID: 0}
+  _dialogueItemIndexCurrent: 0
   completedDialogues: []
   audioManager: {fileID: 0}

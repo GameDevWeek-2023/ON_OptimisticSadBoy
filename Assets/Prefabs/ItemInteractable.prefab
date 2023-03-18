@@ -168,3 +168,4 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   item: {fileID: 11400000, guid: 802f958aa52490242b233e371c1f478b, type: 2}
+  grabClip: {fileID: 8300000, guid: 3af8552e3595a5440a788e9f0420cadd, type: 3}

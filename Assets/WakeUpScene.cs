@@ -24,6 +24,8 @@ public class WakeUpScene : MonoBehaviour
         if (!switchy)
         {
             DialogueManager.Instance.Dialogue = wakeDialogue;
+            Debug.Log("INTERACTION");
+            DialogueManager.Instance.Next();
             switchy = true;
         }
 

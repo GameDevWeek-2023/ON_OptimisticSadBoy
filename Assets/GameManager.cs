@@ -6,41 +6,19 @@ using UnityEngine.SceneManagement;
 public class GameManager : Singleton<GameManager>
 {
 
-    public bool freezeInput = false;
+    public static bool freezeInput = false;
+    public static bool cameFromWakeUp = true;
+    public static bool backFromSchool = false;
+    public static int switchIndex = 0;
 
-
-    void Start()
-    {
-        //DontDestroyOnLoad(this.gameObject);
-    }
-
-    public void FreezeInput()
+    public static void FreezeInput()
     {
         freezeInput = true;
     }
 
-    public void UnfreezeInput()
+    public static void UnfreezeInput()
     {
         freezeInput = false;
     }
-
-    public void LoadHouseScene()
-    {
-        SoundManager.Instance.outsideBgm.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-        SoundManager.Instance.houseBgm.start();
-        SoundManager.Instance.PlayDoorSound();
-        SceneManager.LoadScene("House");
-    }
-
-    public void LoadOutsideScene()
-    {        
-        SoundManager.Instance.houseBgm.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-        SoundManager.Instance.outsideBgm.start();
-        SoundManager.Instance.PlayDoorSound();
-        SceneManager.LoadScene("Hometown");
-    }
-    
-
-
 
 }

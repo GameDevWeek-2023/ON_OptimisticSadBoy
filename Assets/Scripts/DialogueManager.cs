@@ -13,9 +13,9 @@ public class DialogueManager : Singleton<DialogueManager>
     public static Action EventRewardItem;
 
     public AudioClip clickSound;
+    public AudioClip grabSound;
 
-    [SerializeField]
-    private DialogueSO _dialogue;
+    public DialogueSO _dialogue;
     [SerializeField]
     private Image _characterImageLeftUI;
     [SerializeField]
@@ -25,7 +25,7 @@ public class DialogueManager : Singleton<DialogueManager>
     [SerializeField]
     private RectTransform _dialogueUIWrapper;
 
-    private int _dialogueItemIndexCurrent = 0;
+    public int _dialogueItemIndexCurrent = 0;
     private int _dialogueItenIndexMax = 0;
     private Vector4 _alphaCharacterDisabled = new Vector4(1, 1, 1, 0);
     private Vector4 _alphaCharacterActive = new Vector4(1, 1, 1, 1);
@@ -161,11 +161,13 @@ public class DialogueManager : Singleton<DialogueManager>
             _characterImageLeftUI.color = _alphaCharacterPassive;
         }
         _dialogueTextUI.text = dialogueItem.Text;
-        /*
+
         // Handle Dialogue Item
-        if(dialogueItem.rewardItems.Count > 0)
+        if (dialogueItem.rewardItems.Count > 0)
+        {
             HandleRewardItems(dialogueItem.rewardItems);
-        */
+            audioManager.GetComponent<AudioSource>().PlayOneShot(grabSound, 1f);
+        }
         
         
         
@@ -194,21 +196,21 @@ public class DialogueManager : Singleton<DialogueManager>
     {
         EventDialogueFinished?.Invoke(dialogue.GetInstanceID());
         HideDialogueUI();
-        //HandleRewardItem();
+        HandleRewardItem();
         
         if(!dialogue.isLoop)
             completedDialogues.Add(dialogue);
 
-        GameManager.Instance.UnfreezeInput();
+        GameManager.UnfreezeInput();
     }
-    /*
+    
     void HandleRewardItems(List<ItemSO> items)
     {
         
         if (items.Count == 0) return;
         foreach (ItemSO item in items)
         {
-            InventoryManager.Instance.InventoryList.Add(item);
+            InventoryManager.Instance.AddItem(item);
         }
         EventRewardItem?.Invoke();
         
@@ -220,5 +222,5 @@ public class DialogueManager : Singleton<DialogueManager>
         
         HandleRewardItems(_dialogue.RewardItemList);
     }
-    */
+    
 }

@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
 
     void Update(){
 
-        if (!GameManager.Instance.freezeInput)
+        if (!GameManager.freezeInput)
         {
             CheckTerrain();
 
@@ -49,7 +49,7 @@ public class PlayerController : MonoBehaviour
     }
 
     private void FixedUpdate(){
-        if (!GameManager.Instance.freezeInput)
+        if (!GameManager.freezeInput)
         {
             rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
         } else

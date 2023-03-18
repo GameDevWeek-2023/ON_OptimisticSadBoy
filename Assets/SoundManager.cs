@@ -15,6 +15,7 @@ public class SoundManager : Singleton<SoundManager>
     private static FMOD.Studio.EventInstance footstepEvent;
 
     private FMOD.Studio.EventInstance doorEvent;
+    private FMOD.Studio.EventInstance busEvent;
 
     public int terrain = 0;
 
@@ -73,6 +74,12 @@ public class SoundManager : Singleton<SoundManager>
     {
         doorEvent = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Door");
         doorEvent.start();
+    }
+
+    public void PlayBusSound()
+    {
+        busEvent = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Bus");
+        busEvent.start();
     }
 
 

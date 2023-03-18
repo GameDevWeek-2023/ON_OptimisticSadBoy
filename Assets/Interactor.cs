@@ -33,7 +33,7 @@ public class Interactor : MonoBehaviour
                 if (Keyboard.current.eKey.wasPressedThisFrame)
                 {
                     Debug.Log("INTERACTION");
-                    onInteract.Invoke();
+                    onInteract?.Invoke();
                 }
             }
             
