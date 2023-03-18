@@ -95,7 +95,7 @@ public class SceneSwitch : MonoBehaviour
     public void LoadTaxiScene()
     {
         //GameManager.backFromSchool = true;
-        SoundManager.Instance.outsideBgm.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        SoundManager.Instance.outsideBgm.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         //SoundManager.Instance.PlayBusSound();
         foreach (Transform child in GameObject.Find("GUI").transform)
         {
@@ -105,13 +105,28 @@ public class SceneSwitch : MonoBehaviour
         GameManager.happiness++;
         StartCoroutine(Transition());
     }
-
+    /*
     public void BackFromSchoolScene()
     {
         //SoundManager.Instance.deepBgm.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         SoundManager.Instance.PlayBusSound();
         StartCoroutine(Transition());
     }
+    */
+    public void LoadBrainScene()
+    {
+        //GameManager.backFromSchool = true;
+        SoundManager.Instance.houseBgm.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        SoundManager.Instance.brainBGM.start();
+        /*foreach (Transform child in GameObject.Find("GUI").transform)
+        {
+            child.gameObject.SetActive(false);
+        }*/
+        GameManager.switchIndex = 5;
+        StartCoroutine(Transition());
+    }
+
+
 
     IEnumerator Transition()
     {

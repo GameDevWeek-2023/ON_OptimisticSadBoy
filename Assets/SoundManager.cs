@@ -38,7 +38,7 @@ public class SoundManager : Singleton<SoundManager>
         deepBgm = FMODUnity.RuntimeManager.CreateInstance("event:/Music/DeepBGM");
 
         taxiEvent = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Taxi");
-        print("taxi");
+        
     }
 
     

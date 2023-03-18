@@ -9,6 +9,10 @@ public class HouseLogic : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (!GameManager.backFromSchool)
+        {
+            GameObject.Find("Sleep").SetActive(false);
+        }
         if (GameManager.cameFromWakeUp)
         {
             bread.SetActive(true);

@@ -1533,11 +1533,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   happinessLevels:
+  - {fileID: 21300000, guid: 971ab2ed07b61d44d9f8b01dcdb8e6c7, type: 3}
+  - {fileID: 21300000, guid: 30354b1b6ada1d04cb33f370f0d2e0d4, type: 3}
+  - {fileID: 21300000, guid: 493f17c0b60c9604596d1bcbe5a5c881, type: 3}
+  - {fileID: 21300000, guid: 0c238d93dfc5ecd47b83ea5109042210, type: 3}
   - {fileID: 21300000, guid: f7fac2f9caa78104ab0c9db61555251e, type: 3}
-  - {fileID: 21300000, guid: a17135d4a10453a42870c5b893af0074, type: 3}
-  - {fileID: 21300000, guid: 098b834aba929b546b52a00ce4804e4e, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!114 &1793767687
 MonoBehaviour:
   m_ObjectHideFlags: 0
