@@ -43,7 +43,9 @@ public class WakeUpScene : MonoBehaviour
     IEnumerator SceneTransition()
     {
         yield return new WaitForSeconds(0.5f);
-        GameObject.Find("UI").GetComponent<Image>().enabled = true;
+        //GameManager.UIOn();
+        //GameObject.Find("UI").GetComponent<Image>().enabled = true;
+        //GameObject.Find("GUI").SetActive(true);
         SceneManager.LoadScene("House");
         GameObject.Find("Player").transform.position = new Vector2(4.047618f, -15.33084f);
         SoundManager.Instance.deepBgm.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);

@@ -20,8 +20,8 @@ MonoBehaviour:
   narratorSound: {fileID: 0}
   _dialogueItemList:
   - _position: 0
-    _image: {fileID: 0}
-    _text: 
+    _image: {fileID: 21300000, guid: 34d9cbaa3f18ceb4386a4fe36046c0bb, type: 3}
+    _text: (...)
     rewardItems: []
   - _position: 1
     _image: {fileID: 21300000, guid: ec29023e5e7be0645a1e1b19eec0309a, type: 3}

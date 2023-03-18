@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2bd55f13fe3a874d8ecc5193802b9f7, type: 3}
+  m_Name: Taxi
+  m_EditorClassIdentifier: 
+  _title: 
+  _description: 
+  _startImageLeft: {fileID: 21300000, guid: 34d9cbaa3f18ceb4386a4fe36046c0bb, type: 3}
+  _startImageRight: {fileID: 21300000, guid: ec29023e5e7be0645a1e1b19eec0309a, type: 3}
+  dialogueMusic: {fileID: 0}
+  narratorSound: {fileID: 0}
+  _dialogueItemList:
+  - _position: 1
+    _image: {fileID: 0}
+    _text: Where can I bring you?
+    rewardItems: []
+  - _position: 0
+    _image: {fileID: 21300000, guid: f49e157f64f9dc149ae7df5c76c2d5a3, type: 3}
+    _text: "Far away from here, if I\u2019d got the money."
+    rewardItems: []
+  - _position: 0
+    _image: {fileID: 21300000, guid: f49e157f64f9dc149ae7df5c76c2d5a3, type: 3}
+    _text: Instead just drive me through the town. I need to kill time.
+    rewardItems: []
+  - _position: 1
+    _image: {fileID: 0}
+    _text: "Sure. Actually I\u2019m having a break right now, but I\u2019ll drive
+      you around."
+    rewardItems: []
+  - _position: 0
+    _image: {fileID: 21300000, guid: f49e157f64f9dc149ae7df5c76c2d5a3, type: 3}
+    _text: Skipping break just to do what you do the whole day?
+    rewardItems: []
+  - _position: 1
+    _image: {fileID: 0}
+    _text: You know, I do love my job. I get to meet so many interesting people every
+      day.
+    rewardItems: []
+  - _position: 1
+    _image: {fileID: 0}
+    _text: And the best part is, I get to have conversations with them.
+    rewardItems: []
+  - _position: 1
+    _image: {fileID: 0}
+    _text: Oh, boy. It sounds boring, but...
+    rewardItems: []
+  - _position: 1
+    _image: {fileID: 0}
+    _text: Some of the things people tell me are amazing.
+    rewardItems: []
+  - _position: 1
+    _image: {fileID: 0}
+    _text: I've learned so much just from driving people around.
+    rewardItems: []
+  - _position: 0
+    _image: {fileID: 21300000, guid: f49e157f64f9dc149ae7df5c76c2d5a3, type: 3}
+    _text: I barely experienced interesting conversations so far.
+    rewardItems: []
+  - _position: 0
+    _image: {fileID: 21300000, guid: f49e157f64f9dc149ae7df5c76c2d5a3, type: 3}
+    _text: The ones I need to have with my parents just suck.
+    rewardItems: []
+  - _position: 0
+    _image: {fileID: 21300000, guid: f49e157f64f9dc149ae7df5c76c2d5a3, type: 3}
+    _text: "Maybe it\u2019s because they don\u2019t like their jobs at all."
+    rewardItems: []
+  - _position: 0
+    _image: {fileID: 21300000, guid: f49e157f64f9dc149ae7df5c76c2d5a3, type: 3}
+    _text: They should change it to something they like more.
+    rewardItems: []
+  - _position: 1
+    _image: {fileID: 0}
+    _text: 'Changing a job can be hard. '
+    rewardItems: []
+  - _position: 1
+    _image: {fileID: 0}
+    _text: "When you have restrictions, you can\u2019t easily tear away from them."
+    rewardItems: []
+  - _position: 1
+    _image: {fileID: 0}
+    _text: I can call myself a lucky man for having found this job.
+    rewardItems: []
+  - _position: 0
+    _image: {fileID: 21300000, guid: f49e157f64f9dc149ae7df5c76c2d5a3, type: 3}
+    _text: What were the most interesting conversations you had or people you met?
+    rewardItems: []
+  - _position: 1
+    _image: {fileID: 0}
+    _text: One time I had the possibility to drive a famous actor around town...
+    rewardItems: []
+  - _position: 1
+    _image: {fileID: 0}
+    _text: Another time there was a tourist who couldn't find back to his hotel.
+    rewardItems: []
+  - _position: 1
+    _image: {fileID: 0}
+    _text: I love driving children around because of all the funny things they say.
+    rewardItems: []
+  - _position: 1
+    _image: {fileID: 0}
+    _text: And I had many interesting conversations with business executives.
+    rewardItems: []
+  _rewardItemList: []
+  isLoop: 0
+  nextDialogue: {fileID: 0}
+  isNarratorText: 0

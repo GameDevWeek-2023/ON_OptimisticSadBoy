@@ -165,8 +165,9 @@ public class DialogueManager : Singleton<DialogueManager>
         // Handle Dialogue Item
         if (dialogueItem.rewardItems.Count > 0)
         {
-            HandleRewardItems(dialogueItem.rewardItems);
             audioManager.GetComponent<AudioSource>().PlayOneShot(grabSound, 1f);
+            HandleRewardItems(dialogueItem.rewardItems);
+            
         }
         
         

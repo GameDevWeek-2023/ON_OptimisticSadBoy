@@ -16,6 +16,7 @@ public class SoundManager : Singleton<SoundManager>
 
     private FMOD.Studio.EventInstance doorEvent;
     private FMOD.Studio.EventInstance busEvent;
+    public FMOD.Studio.EventInstance taxiEvent;
 
     public int terrain = 0;
 
@@ -35,6 +36,9 @@ public class SoundManager : Singleton<SoundManager>
         startBgm = FMODUnity.RuntimeManager.CreateInstance("event:/Music/StartMenuBGM");
 
         deepBgm = FMODUnity.RuntimeManager.CreateInstance("event:/Music/DeepBGM");
+
+        taxiEvent = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Taxi");
+        print("taxi");
     }
 
     

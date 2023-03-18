@@ -45,6 +45,10 @@ public class IntroScene : MonoBehaviour
         //GameObject.Find("UI").GetComponent<Image>().enabled = true;
         //SceneManager.LoadScene("WakeUp");
         SceneManager.LoadScene("Black");
+        if (GameManager.switchIndex == 2)
+        {
+            SoundManager.Instance.PlayBusSound();
+        }
         SoundManager.Instance.deepBgm.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         //SoundManager.Instance.houseBgm.start();
     }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class SceneSwitch : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class SceneSwitch : MonoBehaviour
     public AudioClip removeItem;
     public GameObject bettler;
     public GameObject bus;
+    public DialogueSO bettlerDialogue;
 
     public bool tookBread = false;
     public bool bettlerSpawn = false;
@@ -20,40 +22,48 @@ public class SceneSwitch : MonoBehaviour
     public void Update()
     {
         if (!tookBread && (SceneManager.GetActiveScene().name == "Hometown")) {
-            Debug.Log("TEST");
+            //Debug.Log("TEST");
             if (DialogueManager.Instance._dialogue != null)
             {
                 if (DialogueManager.Instance._dialogue.Title == "The Bettler TM")
                 {
-                    Debug.Log("TEST2");
+                    //Debug.Log("TEST2");
                     if (DialogueManager.Instance._dialogueItemIndexCurrent == 9)
                     {
-                        Debug.Log("TEST3");
+                        //Debug.Log("TEST3");
                         InventoryManager.Instance.RemoveItem(bread);
-                        source.PlayOneShot(removeItem, 1f);
+                        source.PlayOneShot(removeItem, 0.7f);
                         tookBread = true;
+                        GameManager.happiness++;
                     }
                 }
             }
         }
-        if (!bettlerSpawn && GameManager.backFromSchool)
+        if (!bettlerSpawn && GameManager.backFromSchool && !GameManager.killBettler)
         {
             bettlerSpawn = true;
             bettler.SetActive(true);
+            GameObject.Find("Bettler").GetComponent<DialogueInteractable>().dialogue = bettlerDialogue;
         }
         if (!busGone && !GameManager.backFromSchool)
         {
             busGone = true;
             bus.SetActive(true);
         }
+
     }
 
     public void LoadHouseScene()
     {
+        if (GameManager.switchIndex >= 2)
+        {
+            GameManager.killBettler = true;
+        }
         SoundManager.Instance.outsideBgm.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         SoundManager.Instance.houseBgm.start();
         SoundManager.Instance.PlayDoorSound();
         SceneManager.LoadScene("House");
+
     }
 
     public void LoadOutsideScene()
@@ -74,6 +84,31 @@ public class SceneSwitch : MonoBehaviour
     {
         GameManager.backFromSchool = true;
         SoundManager.Instance.outsideBgm.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        SoundManager.Instance.PlayBusSound();
+        foreach (Transform child in GameObject.Find("GUI").transform)
+        {
+            child.gameObject.SetActive(false);
+        }
+        StartCoroutine(Transition());
+    }
+
+    public void LoadTaxiScene()
+    {
+        //GameManager.backFromSchool = true;
+        SoundManager.Instance.outsideBgm.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        //SoundManager.Instance.PlayBusSound();
+        foreach (Transform child in GameObject.Find("GUI").transform)
+        {
+            child.gameObject.SetActive(false);
+        }
+        GameManager.killBettler = true;
+        GameManager.happiness++;
+        StartCoroutine(Transition());
+    }
+
+    public void BackFromSchoolScene()
+    {
+        //SoundManager.Instance.deepBgm.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         SoundManager.Instance.PlayBusSound();
         StartCoroutine(Transition());
     }

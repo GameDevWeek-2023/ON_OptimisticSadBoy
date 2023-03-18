@@ -5,12 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class ToSchool : MonoBehaviour
 {
-    string[] sceneNames = { "WakeUp", "School" };
+    string[] sceneNames = { "WakeUp", "School", "Hometown", "Taxi", "Hometown" };
+    float[] switchTimes = { 2f, 5f, 5f, 2f, 2f };
     
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(TransitionScene(5.0f));
+        StartCoroutine(TransitionScene());
     }
 
     // Update is called once per frame
@@ -19,9 +20,9 @@ public class ToSchool : MonoBehaviour
         
     }
 
-    IEnumerator TransitionScene(float time)
+    IEnumerator TransitionScene()
     {
-        yield return new WaitForSeconds(time);
+        yield return new WaitForSeconds(switchTimes[GameManager.switchIndex]);
         SceneManager.LoadScene(sceneNames[GameManager.switchIndex]);
         GameManager.switchIndex++;
     }

@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Black.unity
     guid: d2db117f9da7b7b46bf4fdbf2e461b07
+  - enabled: 1
+    path: Assets/Scenes/Taxi.unity
+    guid: be6dd17ed10a5c34781072055aeceaf9
   m_configObjects: {}
