@@ -117,7 +117,7 @@ public class SceneSwitch : MonoBehaviour
     {
         //GameManager.backFromSchool = true;
         SoundManager.Instance.houseBgm.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-        SoundManager.Instance.brainBGM.start();
+        SoundManager.Instance.brainBgm.start();
         /*foreach (Transform child in GameObject.Find("GUI").transform)
         {
             child.gameObject.SetActive(false);
