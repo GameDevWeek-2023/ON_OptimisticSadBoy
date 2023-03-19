@@ -19,33 +19,43 @@ MonoBehaviour:
   dialogueMusic: {fileID: 0}
   narratorSound: {fileID: 0}
   _dialogueItemList:
-  - _position: 0
-    _image: {fileID: 0}
-    _text: 
+  - _position: 1
+    _image: {fileID: 21300000, guid: 9558ab29d1df199459b8b51e3e5d9117, type: 3}
+    _text: Wake up!
+    rewardItems: []
   - _position: 1
     _image: {fileID: 21300000, guid: 9558ab29d1df199459b8b51e3e5d9117, type: 3}
     _text: WAKE UP, Daemon!
+    rewardItems: []
   - _position: 0
     _image: {fileID: 21300000, guid: 34d9cbaa3f18ceb4386a4fe36046c0bb, type: 3}
     _text: "(Yeah\u2026 Another gray morning in this monotonous world.)"
+    rewardItems: []
   - _position: 0
     _image: {fileID: 21300000, guid: 34d9cbaa3f18ceb4386a4fe36046c0bb, type: 3}
     _text: (A day like any other...)
+    rewardItems: []
   - _position: 0
     _image: {fileID: 21300000, guid: 34d9cbaa3f18ceb4386a4fe36046c0bb, type: 3}
     _text: (Will that change someday? Hope dies last, does it?)
+    rewardItems: []
   - _position: 1
     _image: {fileID: 21300000, guid: 9558ab29d1df199459b8b51e3e5d9117, type: 3}
     _text: Hurry up, Daemon! School isn't open all day!
+    rewardItems: []
   - _position: 0
     _image: {fileID: 21300000, guid: 34d9cbaa3f18ceb4386a4fe36046c0bb, type: 3}
     _text: (School. Worse than the smell of cat food.)
+    rewardItems: []
   - _position: 1
     _image: {fileID: 21300000, guid: 9558ab29d1df199459b8b51e3e5d9117, type: 3}
     _text: As I told you, I need to get to work earlier, today.
+    rewardItems: []
   - _position: 1
     _image: {fileID: 21300000, guid: 9558ab29d1df199459b8b51e3e5d9117, type: 3}
     _text: Your breaktime snack is in the kitchen. So wake up and get going!
+    rewardItems: []
+  _rewardItemList: []
   isLoop: 0
   nextDialogue: {fileID: 0}
   isNarratorText: 0

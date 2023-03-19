@@ -78,7 +78,7 @@ MonoBehaviour:
     rewardItems: []
   - _position: 1
     _image: {fileID: 21300000, guid: ec29023e5e7be0645a1e1b19eec0309a, type: 3}
-    _text: Make it count.
+    _text: Make it count. Take this necklace, it'll help you to remember.
     rewardItems: []
   _rewardItemList:
   - {fileID: 11400000, guid: 20083c5d52d0cb840bea6adef04cbf63, type: 2}

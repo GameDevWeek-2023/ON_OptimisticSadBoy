@@ -103,6 +103,7 @@ public class SceneSwitch : MonoBehaviour
         }
         GameManager.killBettler = true;
         GameManager.happiness++;
+        GameManager.cameFromTaxi = true;
         StartCoroutine(Transition());
     }
     /*
@@ -118,13 +119,15 @@ public class SceneSwitch : MonoBehaviour
         //GameManager.backFromSchool = true;
         SoundManager.Instance.houseBgm.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         SoundManager.Instance.brainBgm.start();
-        /*foreach (Transform child in GameObject.Find("GUI").transform)
+        foreach (Transform child in GameObject.Find("GUI").transform)
         {
             child.gameObject.SetActive(false);
-        }*/
+        }
         GameManager.switchIndex = 5;
         StartCoroutine(Transition());
     }
+
+    
 
 
 

@@ -10,6 +10,7 @@ public class HometownLogic : MonoBehaviour
     private bool selfSwitch2 = false;
     private bool selfSwitch3 = false;
     private bool selfSwitch4 = false;
+    private bool selfSwitch5 = false;
     public GameObject taxiTrigger;
     public DialogueSO returnDialogue;
     // Start is called before the first frame update
@@ -22,7 +23,7 @@ public class HometownLogic : MonoBehaviour
             GameManager.cameFromWakeUp = false;
             GameObject.Find("Player").transform.position = new Vector2(16.27f, -14.96f);
             GameManager.schoolReturn = true;
-            DialogueManager.Instance.Dialogue = returnDialogue;
+            
             inReturnDialogue = true;            
         }
         if (GameManager.backFromSchool && !selfSwitch)
@@ -45,6 +46,11 @@ public class HometownLogic : MonoBehaviour
             taxiTrigger.SetActive(false);
             selfSwitch4 = true;
         }
+        if (GameManager.cameFromTaxi)
+        {
+            GameObject.Find("Player").transform.position = new Vector2(8.28f, -23.1f);
+            GameManager.cameFromTaxi = false;
+        }
     }
 
     // Update is called once per frame
@@ -62,6 +68,11 @@ public class HometownLogic : MonoBehaviour
         }
         if (inReturnDialogue)
         {
+            if (!selfSwitch5)
+            {
+                DialogueManager.Instance.Dialogue = returnDialogue;
+                selfSwitch5 = true;
+            }
             GameManager.freezeInput = true;
             if (Keyboard.current.eKey.wasPressedThisFrame)
             {

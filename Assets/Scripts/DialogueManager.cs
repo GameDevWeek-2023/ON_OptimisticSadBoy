@@ -40,7 +40,7 @@ public class DialogueManager : Singleton<DialogueManager>
         _dialogueTextUI.text = "";
         _characterImageLeftUI.color = _alphaCharacterDisabled;
         _characterImageRightUI.color = _alphaCharacterDisabled;
-        //audioManager = GameObject.Find("AudioManager");
+        audioManager = GameObject.Find("SFX");
     }
 
     public DialogueSO Dialogue
@@ -165,7 +165,6 @@ public class DialogueManager : Singleton<DialogueManager>
         // Handle Dialogue Item
         if (dialogueItem.rewardItems.Count > 0)
         {
-            audioManager.GetComponent<AudioSource>().PlayOneShot(grabSound, 1f);
             HandleRewardItems(dialogueItem.rewardItems);
             
         }
@@ -213,6 +212,8 @@ public class DialogueManager : Singleton<DialogueManager>
         {
             InventoryManager.Instance.AddItem(item);
         }
+        audioManager.GetComponent<AudioSource>().PlayOneShot(grabSound, 1f);
+
         EventRewardItem?.Invoke();
         
     }
